@@ -1,0 +1,50 @@
+body {
+    padding: 20px;
+}
+
+.rotating-icon {
+    display: inline-block;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes twist-up {
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+button {
+    padding: 0.6rem;
+    background-color: rgb(18, 54, 109);
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .acc-details {
+        padding: 0.7rem;
+        border: 1px solid black;
+    }
+
+    .create-code {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+            width: 40vw;
+        }
+    }
+}
